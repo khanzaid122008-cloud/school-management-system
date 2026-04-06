@@ -1,0 +1,113 @@
+Hotel Management System
+1. Introduction
+1.1 Purpose
+
+The purpose of this document is to describe the requirements for a Hotel Management System (HMS). The system will automate hotel operations such as room booking, customer management, billing, and staff management.
+
+1.2 Scope
+
+The HMS will:
+
+Manage room reservations (online/offline)
+Handle customer check-in and check-out
+Maintain customer records
+Generate bills and invoices
+Provide reports for management
+1.3 Definitions, Acronyms, Abbreviations
+HMS – Hotel Management System
+UI – User Interface
+DB – Database
+1.4 References
+IEEE 830 SRS Standard
+Software Engineering textbooks
+2. Overall Description
+2.1 Product Perspective
+
+The HMS is a standalone or web-based system that interacts with:
+
+Database server
+Payment gateway (optional)
+Admin and staff interfaces
+2.2 Product Functions
+Room availability management
+Reservation system
+Customer data management
+Billing and payment processing
+Reporting and analytics
+2.3 User Classes and Characteristics
+Admin: Full access, manages system
+Receptionist: Handles bookings and check-ins
+Customer: Books rooms and views details
+2.4 Operating Environment
+OS: Windows/Linux/Mac
+Platform: Web-based or Desktop
+Database: MySQL / PostgreSQL
+2.5 Constraints
+Must ensure data security
+Should handle multiple users simultaneously
+Must comply with data privacy standards
+2.6 Assumptions and Dependencies
+Users have internet access (for web version)
+Payment gateway integration depends on third-party services
+3. Functional Requirements
+3.1 User Management
+Users can register/login
+Admin can add/remove users
+Role-based access control
+3.2 Room Management
+Add, update, delete room details
+Categorize rooms (Single, Double, Deluxe)
+Track room availability
+3.3 Reservation Management
+Book rooms
+Modify or cancel bookings
+View booking history
+3.4 Check-in / Check-out
+Assign rooms during check-in
+Update room status
+Calculate duration of stay
+3.5 Billing and Payment
+Generate invoices
+Accept multiple payment modes
+Maintain transaction records
+3.6 Reports
+Daily/Monthly revenue reports
+Occupancy reports
+Customer reports
+4. Non-Functional Requirements
+4.1 Performance
+System should handle multiple users simultaneously
+Response time < 2 seconds
+4.2 Security
+Authentication and authorization required
+Data encryption for sensitive information
+4.3 Usability
+User-friendly interface
+Easy navigation
+4.4 Reliability
+System should have minimal downtime
+Regular backup of data
+4.5 Scalability
+Should support expansion (multiple hotels/branches)
+5. External Interface Requirements
+5.1 User Interfaces
+Login page
+Dashboard
+Booking interface
+Billing interface
+5.2 Hardware Interfaces
+Computer systems
+Printers (for invoices)
+5.3 Software Interfaces
+Database system
+Payment gateway APIs
+6. System Features
+6.1 Booking System
+Real-time room availability
+Instant booking confirmation
+6.2 Customer Management
+Store personal details
+Maintain booking history
+6.3 Billing System
+Auto calculation of charges
+Tax and discount handling
